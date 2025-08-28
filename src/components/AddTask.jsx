@@ -21,7 +21,14 @@ function AddTask({ onAddTaskSubmit }) {
         className="border border-slate-300 outline-slate-400 px-4 py-2 rounded-md"
       />
       <button
-        onClick={() => onAddTaskSubmit(title, description)}
+        onClick={() => {
+          if (!title.trim() || !description.trim()) {
+            return alert("Preencha os dados da tarefa");
+          }
+          onAddTaskSubmit(title, description);
+          setTitle("");
+          setDescription("");
+        }}
         className="bg-slate-600 text-white px-4 py-2 rounded-md font-medium"
       >
         Adicionar
