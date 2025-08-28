@@ -29,3 +29,6 @@ Aplicação web em **React** + **Vite** de um Board de Tarefas.
 
 ## Requisitos
 - Node.js
+
+## Layout
+<img width="736" height="545" alt="image" src="https://github.com/user-attachments/assets/7457b515-f144-4aa1-9a12-f94f4fab4e78" />
